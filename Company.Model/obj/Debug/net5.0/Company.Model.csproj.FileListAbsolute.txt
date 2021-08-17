@@ -1,0 +1,14 @@
+C:\Users\p_jos\source\repos\TelePerformanceTest\Company.Model\bin\Debug\net5.0\Company.Model.deps.json
+C:\Users\p_jos\source\repos\TelePerformanceTest\Company.Model\bin\Debug\net5.0\Company.Model.runtimeconfig.json
+C:\Users\p_jos\source\repos\TelePerformanceTest\Company.Model\bin\Debug\net5.0\Company.Model.runtimeconfig.dev.json
+C:\Users\p_jos\source\repos\TelePerformanceTest\Company.Model\bin\Debug\net5.0\Company.Model.dll
+C:\Users\p_jos\source\repos\TelePerformanceTest\Company.Model\bin\Debug\net5.0\ref\Company.Model.dll
+C:\Users\p_jos\source\repos\TelePerformanceTest\Company.Model\bin\Debug\net5.0\Company.Model.pdb
+C:\Users\p_jos\source\repos\TelePerformanceTest\Company.Model\obj\Debug\net5.0\Company.Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\p_jos\source\repos\TelePerformanceTest\Company.Model\obj\Debug\net5.0\Company.Model.AssemblyInfoInputs.cache
+C:\Users\p_jos\source\repos\TelePerformanceTest\Company.Model\obj\Debug\net5.0\Company.Model.AssemblyInfo.cs
+C:\Users\p_jos\source\repos\TelePerformanceTest\Company.Model\obj\Debug\net5.0\Company.Model.csproj.CoreCompileInputs.cache
+C:\Users\p_jos\source\repos\TelePerformanceTest\Company.Model\obj\Debug\net5.0\Company.Model.dll
+C:\Users\p_jos\source\repos\TelePerformanceTest\Company.Model\obj\Debug\net5.0\ref\Company.Model.dll
+C:\Users\p_jos\source\repos\TelePerformanceTest\Company.Model\obj\Debug\net5.0\Company.Model.pdb
+C:\Users\p_jos\source\repos\TelePerformanceTest\Company.Model\obj\Debug\net5.0\Company.Model.genruntimeconfig.cache

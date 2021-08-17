@@ -1,0 +1,126 @@
+<div class="row">
+  <div class="alert alert-primary col-md-12" role="alert">
+    La Empresa se encuentra rergistrada en la camara de comercio de Medellin para Antioquia. Para acceder al servicio de tramites virtuales se utilizaran los datos
+    reportados en el registro. Los campos marcados con asterisco (*) son obligatorios.
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-6">
+    <div class="form-group row">
+      <label class="col-sm-12 col-form-label">Naturaleza: *</label>
+      <div class="col-sm-12">
+        <select class="form-control" #selectType id="TypeID" name="TypeID">
+          <option [value]="null">Seleccione una opción</option>
+          <option *ngFor="let item of typeIdentification" [attr.selected]=" (dataCompany.idIdentificationType == item.idIdentificationType) ? 'selected' : null" value="{{item.idIdentificationType}}"> {{item.identificationName}} </option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="form-group row">
+      <label class="col-sm-12 col-form-label">Numero Identificación: *</label>
+      <div class="col-sm-12">
+        <input type="text" class="form-control" pattern="[0-9]+" id="idNumber" name="idNumber" value = " {{dataCompany.identificationNumber}} ">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row" [attr.hidden] = " typeHidden ? null : 'hidden' ">
+  <div class="col-md-12">
+    <div class="form-group row">
+      <label class="col-sm-12 col-form-label">Nombre/Razón Social: *</label>
+      <div class="col-sm-12">
+        <input type="text" class="form-control" pattern="[a-zA-Z ]+" id="companyName" name="companyName" value = " {{dataCompany.companyName}} ">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row" [attr.hidden] = " typeHidden ? 'hidden' : null ">
+  <div class="col-md-3">
+    <div class="form-group row">
+      <label class="col-sm-12 col-form-label">Primer Nombre: *</label>
+      <div class="col-sm-12">
+        <input type="text" class="form-control" pattern="[a-zA-Z ]+" id="firtsName" name="firtsName" value = " {{dataCompany.firtsName}} ">
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="form-group row">
+      <label class="col-sm-12 col-form-label">Segundo Nombre:</label>
+      <div class="col-sm-12">
+        <input type="text" class="form-control" pattern="[a-zA-Z ]+" id="secondName" name="secondName" value = " {{dataCompany.secondName}} ">
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="form-group row">
+      <label class="col-sm-12 col-form-label">Primer Apellido: *</label>
+      <div class="col-sm-12">
+        <input type="text" class="form-control" pattern="[a-zA-Z ]+" id="firtsLastName" name="firtsLastName" value = " {{dataCompany.firtsLastName}} ">
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="form-group row">
+      <label class="col-sm-12 col-form-label">Segundo Apellido: </label>
+      <div class="col-sm-12">
+        <input type="text" class="form-control" pattern="[a-zA-Z ]+" id="secondLastName" name="secondLastName" value = " {{dataCompany.secondLastName}} ">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-6">
+    <div class="form-group row">
+      <label class="col-sm-12 col-form-label">Email: *</label>
+      <div class="col-sm-12">
+        <input type="text" class="form-control" pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" id="email" name="email" value = " {{dataCompany.email}} ">
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="form-group row">
+      <label class="col-sm-12 col-form-label">Telefono: *</label>
+      <div class="col-sm-12">
+        <input type="text" class="form-control" pattern="[0-9]+" id="phone" name="phone" value = " {{dataCompany.phone}} ">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-6">
+    <!-- checkbox -->
+    <div class="custom-control custom-checkbox">
+      <input class="custom-control-input" type="checkbox" id="customCheckbox1" value="option1" [attr.checked]=" dataCompany.authorizedSendEmail ? 'checked' : null" >
+      <label for="customCheckbox1" class="custom-control-label">Desea recibir notificaciones via email</label>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <!-- checkbox -->
+    <div class="custom-control custom-checkbox">
+      <input class="custom-control-input" type="checkbox" id="customCheckbox2" value="option2" [attr.checked]=" dataCompany.authorizedSendPhone ? 'checked' : null" >
+      <label for="customCheckbox2" class="custom-control-label">Desea recibir notificaciones via SMS</label>
+    </div>
+  </div>
+</div>
+<br /><br />
+
+  <div class="row">
+    <div class="col-md-6">
+      <button (click)="onSaveInfo()" type="button" class="btn btn-danger btn-block">
+        Continuar <fa-icon [icon]="faAngleRight"></fa-icon>
+      </button>
+    </div>
+    <div class="col-md-6">
+      <button type="button" class="btn btn-block" style="color:white; background-color:black;" [routerLink]="['/']">
+        <!--[swal]="deleteSwal"-->
+        <fa-icon [icon]="faAngleLeft"></fa-icon> Regresar
+      </button>
+    </div>
+  </div>
+

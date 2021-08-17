@@ -1,0 +1,35 @@
+<div class="row">
+  <div class="col-md-12">
+    <p>
+      Ingrese el NIT de la persona natural o juridica para la que realizará
+      el trámite, sin incluir el digito de verificación. Luego seleccione <b>Continuar</b>
+      para completar su solicitud.
+    </p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="form-group row">
+      <label class="col-sm-1 col-form-label">NIT:</label>
+      <div class="col-sm-11">
+        <input type="text" class="form-control" id="nit" name="nit">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-6">
+    <button (click)="onSearchIdentifiacion()" type="button" class="btn btn-danger btn-block">
+      Continuar <fa-icon [icon]="faAngleRight"></fa-icon>
+    </button>
+  </div>
+  <div class="col-md-6">
+    <button type="button" class="btn btn-block" style="color:white; background-color:black;">
+      <!--[swal]="deleteSwal"-->
+      <fa-icon [icon]="faAngleLeft"></fa-icon> Regresar
+    </button>
+  </div>
+</div>
+
