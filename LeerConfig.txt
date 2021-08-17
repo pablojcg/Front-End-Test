@@ -2,3 +2,5 @@
 luego de modificar el Connection String se debe ejecutar el comando 'Update-DataBase -StartupProject Company.Model-Project Company.Model, dicho comando se 
 ejecuta desde la consola de administrador de paquetes de Visual Studio 2019; esto ejecutara las migraciones que ya estan creadas y creara la base de datos en el 
 host que se especifico en el Connection String con le nombre de la base de datos que se coloco ahí tambien.
+
+-La solución principal esta en la carpeta FrontEnd el proyecto se debe abrir desde ese sln. 
